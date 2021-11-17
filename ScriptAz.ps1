@@ -28,6 +28,6 @@ $strg1 = "https://" + $allstorage[1].StorageAccountName + ".blob.core.windows.ne
 
 $context = ($allstorage[2]).context
 $sas = New-AzStorageAccountSASToken -Context $context -Service Blob,File,Table,Queue -ResourceType Service,Container,Object -Permission racwdlup
-$strg2 = "https://" + $allstorage[2].StorageAccountName + ".blob.core.windows.net/Container2?" + $sas
+$strg2 = "https://" + $allstorage[2].StorageAccountName + ".blob.core.windows.net/Container2" + $sas
 
 azcopy cp $strg1 $strg2
