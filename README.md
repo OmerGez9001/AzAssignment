@@ -2,7 +2,7 @@
 
 The complete assignment. In here you will find:
 1. The ARM template, which includes a simple-vm, 3 storages (one is bound to the vm and will not be used) and 2 containers.
-2. The Script, which does Deployment to the ARM template and runs a script that creates, uploads and copies blobs from storage A to storage B
+2. The Script, which does Deployment to the ARM template and runs a script that creates, uploads and copies blobs from storage A to storage B.
 3. The Dashboard json, which holds the dashboard that monitors the server and the 2 storage accounts.
 
 Important notes:
