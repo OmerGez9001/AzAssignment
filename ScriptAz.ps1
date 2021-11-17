@@ -4,7 +4,7 @@ Connect-AzAccount -UseDeviceAuthentication
 
 
 #First command: Deploy ARM template
-New-AzResourceGroupDeployment -ResourceGroupName RsGroupOG -TemplateFile .\finalTemplate
+New-AzResourceGroupDeployment -ResourceGroupName RsGroupOG -TemplateFile .\finalTemplate.json
 	 
 
 #Second command: Run script
