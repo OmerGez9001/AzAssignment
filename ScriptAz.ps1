@@ -24,10 +24,10 @@ for ($num = 0; $num -lt 100; $num++){az storage blob upload --account-name $alls
 
 $context = ($allstorage[1]).context
 $sas = New-AzStorageAccountSASToken -Context $context -Service Blob,File,Table,Queue -ResourceType Service,Container,Object -Permission racwdlup
-$strg1 = "https://" + $allstorage[1].StorageAccountName + ".blob.core.windows.net/Container1" + $sas
+$strg1 = "https://" + $allstorage[1].StorageAccountName + ".blob.core.windows.net/container1" + $sas
 
 $context = ($allstorage[2]).context
 $sas = New-AzStorageAccountSASToken -Context $context -Service Blob,File,Table,Queue -ResourceType Service,Container,Object -Permission racwdlup
-$strg2 = "https://" + $allstorage[2].StorageAccountName + ".blob.core.windows.net/Container2" + $sas
+$strg2 = "https://" + $allstorage[2].StorageAccountName + ".blob.core.windows.net/container2" + $sas
 
 azcopy cp $strg1 $strg2
